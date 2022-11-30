@@ -89,7 +89,7 @@ function myClickListener(grid_size=4,myClassName="cell") {
         }
         let amountWellPlaced = checkWin(grid_size,myClassName)
         updateInfoTaquin(amountWellPlaced)
-        if(amountWellPlaced==15){
+        if(amountWellPlaced==grid_size*grid_size -1){
             alert("Vous avez gagne")
             for (var i = 0; i < cell.length; i++) {
                 cell[i].removeEventListener('click', onClickCell, false);
